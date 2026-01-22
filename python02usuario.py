@@ -10,3 +10,4 @@ numero2 = input()
 
 suma = numero1 + numero2
 
+print("Algo")
