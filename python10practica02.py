@@ -1,8 +1,8 @@
-print("--------------------------------")
+print("-------------------------------------")
 
-#variables
-horas = int(input("INTRODUZCA HORAS SEMANALES: "))
-precioh = int(input("INTRODUZCA IMPORTE HORA: "))
+#VARIABLES
+horas = float(input("INTRODUZCA HORAS SEMANALES: "))
+precioh = float(input("INTRODUZCA IMPORTE HORA: "))
 kilometro = int(input("INTRODUZCA KILOMETROS: "))
 
 
@@ -21,8 +21,9 @@ reten = ""
 if(horas > 36 ):
     horanormal = 36
     horaex = horas - horanormal
+    salariobase = horanormal * precioh
     salarioex = (precioh + 1.5) * horaex
-    bruto = (horanormal * precioh) + salarioex
+    bruto = salariobase + salarioex
 
 iva = bruto * 0.16
 neto = bruto - iva
@@ -41,5 +42,20 @@ elif(bruto > 250 and bruto < 500 or bruto == 500):
 else:
     reten = "50%"
 
-print("------------------------------")
-print("HORAS TRABAJADAS :" )
+print("-------------------------------------")
+print("HORAS TRABAJADAS:", str(horas)+"H")
+print("HORAS EXTRAS:", str(horaex)+"H")
+print("IMPORTE DE LA HORA:", str(precioh)+"€")
+print("DISTANCIA EN KM:", str(kilometro)+"KM")
+print("DESTINO:", str(dieta))
+print("RETENCIÓN:", str(reten))
+print("SALARIO BASE:", str(salariobase)+"€")
+print("SALARIO HORAS EXTRA:", str(salarioex)+"€")
+print("SALARIO BRUTO:", str(bruto)+"€")
+print("IVA (16%):", str(iva)+"€")
+print("-------------------------------------")
+print("SALARIO TOTAL:", str(neto)+"€")
+print("-------------------------------------")
+print("FIN DEL PROGRAMA")
+print("-------------------------------------")
+
