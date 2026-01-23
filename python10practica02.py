@@ -12,8 +12,9 @@ horaex = 0
 salarioex = 0
 salariobase = horas * precioh
 bruto = salariobase 
-iva = bruto * 0.16
-neto = bruto - iva
+iva = 0
+neto = 0
+
 dieta = ""
 reten = ""
 #Hacemos los calculos de las horas extra si son necesarias
@@ -22,8 +23,9 @@ if(horas > 36 ):
     horaex = horas - horanormal
     salarioex = (precioh + 1.5) * horaex
     bruto = (horanormal * precioh) + salarioex
-    iva = bruto * 0.16
-    neto = bruto - iva
+
+iva = bruto * 0.16
+neto = bruto - iva
 
 if(kilometro < 101):
     dieta = "PROVINCIAL"
