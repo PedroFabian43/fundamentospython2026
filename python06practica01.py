@@ -1,6 +1,6 @@
-dni = int(input("dime tu DNI sin la letra: "))
+dni = int(input("Dime tu DNI sin la letra: "))
 
-letradni = dni - (int(dni / 23)) * 23
+letradni = dni - (int(dni / 23) * 23)
 
 if (letradni == 0):
     print("Tu letra es la: T")
@@ -74,3 +74,5 @@ elif (letradni == 22):
 else:
     print("Tu letra es la: T")
     print("Tu DNI es:", str(dni)+"T")
+
+print("Fin de programa")
