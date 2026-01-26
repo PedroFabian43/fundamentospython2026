@@ -1,6 +1,7 @@
+
 email = input("Introduce tu e-mail: ")
 post_punto = email.find(".")
-
+email = email.lower()
 if(email.find("@") == -1):
     print("Tu e-mail necesita una @") 
 elif(email.startswith("@") or email.endswith("@")):
@@ -19,6 +20,7 @@ else:
         print("El dominio no es válido. Debe ser de entre 2-3 carácteres")
     else: 
         print("Tu e-mail es válido")
+        print(email)
         print("Fin de programa")
         
 
