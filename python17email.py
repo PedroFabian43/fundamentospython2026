@@ -16,11 +16,12 @@ elif(email.find(".", email.find("@")) == -1):
 elif(email.startswith(".") or email.endswith(".")):
     print("Tu e-mail no puede empezar ni acabar por .")
 else:
-    post_punto = email[post_punto + 1: ]
-    if(len(post_punto) < 2 or len(post_punto) > 3):
+    dominio = email[post_punto + 1: ]
+    if(len(dominio) < 2 or len(dominio) > 3):
         print("El dominio no es válido. Debe ser de entre 2-3 carácteres")
     else: 
         print("Tu e-mail es válido")
+        
 
 
 

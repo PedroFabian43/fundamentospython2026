@@ -15,6 +15,8 @@ print("endswith(n): ", texto.endswith("n"))
 
 #Sobrecarga de metodo: es añadir condiciones extra al método. como en el caso del find.rfind("p") 
 #Aqui es un metodo pero al añadir el (,1) le añado condiciones extra y se "sobrecarga"
+#También puede ser que nosotros seamos los que mediante un input, escribamos el mensaje, como no sabrmeos el indice
+#Podemos simplemente poner en vez del 1 desde donde comienza, podemos poner otro .find() para que ese sea el inicio de la búsqueda
 print("find(p, index): ", texto.find("p", 1))
 
 #Metodos para saber del contenido de  un texto. normalmente van a salir false si son varias palabras pues los " " (espacios) cuentan y ni son letras o numeros
