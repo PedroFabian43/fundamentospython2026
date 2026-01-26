@@ -1,5 +1,3 @@
-print("Inicio")
-
 email = input("Introduce tu e-mail: ")
 post_punto = email.find(".")
 
@@ -21,6 +19,7 @@ else:
         print("El dominio no es válido. Debe ser de entre 2-3 carácteres")
     else: 
         print("Tu e-mail es válido")
+        print("Fin de programa")
         
 
 
