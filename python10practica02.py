@@ -25,6 +25,7 @@ if(horas > 36 ):
     salarioex = (precioh + 1.5) * horaex
     bruto = salariobase + salarioex
 
+#Hacemos los calculos
 iva = bruto * 0.16
 neto = bruto - iva
 
@@ -57,4 +58,3 @@ print("-------------------------------------")
 print("SALARIO TOTAL:", str(neto)+"€")
 print("-------------------------------------")
 print("FIN DEL PROGRAMA")
-
