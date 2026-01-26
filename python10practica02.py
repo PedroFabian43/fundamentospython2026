@@ -43,12 +43,12 @@ else:
     reten = "50%"
 
 print("-------------------------------------")
-print("HORAS TRABAJADAS:", str(horas)+"H")
-print("HORAS EXTRAS:", str(horaex)+"H")
+print("HORAS TRABAJADAS:", str(horas)+"h")
+print("HORAS EXTRAS:", str(horaex)+"h")
 print("IMPORTE DE LA HORA:", str(precioh)+"€")
-print("DISTANCIA EN KM:", str(kilometro)+"KM")
-print("DESTINO:", str(dieta))
-print("RETENCIÓN:", str(reten))
+print("DISTANCIA EN KM:", str(kilometro)+"km")
+print("DESTINO:", dieta)
+print("RETENCIÓN:", reten)
 print("SALARIO BASE:", str(salariobase)+"€")
 print("SALARIO HORAS EXTRA:", str(salarioex)+"€")
 print("SALARIO BRUTO:", str(bruto)+"€")
@@ -57,5 +57,4 @@ print("-------------------------------------")
 print("SALARIO TOTAL:", str(neto)+"€")
 print("-------------------------------------")
 print("FIN DEL PROGRAMA")
-print("-------------------------------------")
 
