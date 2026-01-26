@@ -28,7 +28,7 @@ elif(mes == 14):
     mes = 2
     anno = anno + 1
 #Depende del resultado entre 0 o 6, sale un dia de la semana 
-#Usando .zfill(2) le estoy diciendo que rellene el espacio hasta 2 osea añade un 0 si solo hay un número a la izquierda y si son 2 como el mes 10, no lo añade pues son 2
+#Usando .zfill(2) le estoy diciendo que rellene el espacio hasta 2 osea añade un 0 si solo hay un número a la izquierda y si son 2 como el mes 10, no lo añade pues ya son 2
 if(resultado == 0):
     print("Sábado")
     print("Es día Sábado", str(dia)+"/"+str(mes).zfill(2)+"/"+str(anno))
