@@ -38,7 +38,7 @@ print(texto[2:5]) #Es lo mismo sin variables
 #Podemos recorrer cada caracter con un bucle preferentemente un bucle FOR pero sirve WHILE
 longitud = len(texto) #si la longitud es 10 el bucle automáticamente contará al final pues aunque el indice acaba en 9, son 10 caracteres
 for i in range(longitud):
-    letra = texto[i]
+    letra = texto[i] #Con esto cada vez recorre un caracter lo transforma en la variable letra.
     print("letra[" + str(i) + "] =" + letra)
 #Los parentesis () se usan en acciones, los corchetes [] se usan en conjuntos por ejemplo conjuntos de letras o strings
 
