@@ -5,20 +5,25 @@
 
 
 def primerMetodo():
+    #Este código jamas se ejecuta si no s ele llama explicitamente
     print("Primer Metodo")
 def segundoMetodo():
     print("Segundo Metodo")
 
-def metodoSaludar(nombre):
-    print("Hola "+ nombre)
-#Si no son llamados no se ejecutan
+def saludar(nombre):
+    print("Bienvenido a Pythom "+ nombre)
+
+def despedirse(nombre, dia):
+    print("Ha sido un placer hoy " + dia + ", Mr/Mrs "+ nombre)
 
 #Esto es el programa principal
 print("Ejemplo de métodos")
 #En el programa principal llamamos a los metodos
+
+saludar("Alumno")
 primerMetodo()
 segundoMetodo()
-metodoSaludar(nombre = "456")
+despedirse("Alumno", "Martes")
 print("Fin de programa")
 
 
