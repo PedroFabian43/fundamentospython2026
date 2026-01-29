@@ -13,11 +13,11 @@ else:
 
 print("Introduzca número DNI")
 dni = input()
-dninum = dni[0: len(dni) - 1]
-dninum = int(dninum)
-validdni = libreria24validaciones.validDni(dninum)
+validdni = libreria24validaciones.validDni(dni)
+comprob = libreria24validaciones.comprobDni(dni)
 
 print(validdni)
+print(comprob)
 print("Fin de programa")
 
 

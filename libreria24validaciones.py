@@ -5,7 +5,7 @@ def validIsbn(isbn):
     if (isbn.isdigit() == False or longitud != 10):
         return False
 
-    if (longitud == 10):
+    else:
         for i in range(longitud):
             cifra = isbn[i]
             
@@ -20,8 +20,9 @@ def validIsbn(isbn):
     
 
 def validDni(numerodni):
-
-    letradni = int(numerodni) - (int(numerodni / 23) * 23)
+    dninum = numerodni[0: len(numerodni) - 1]
+    dninum = int(dninum)
+    letradni = int(dninum) - (int(dninum / 23) * 23)
 
     if (letradni == 0):
         return "T"
@@ -72,12 +73,9 @@ def validDni(numerodni):
     else:
         return "T"
 
-
-    
-
 def comprobDni(dni):
     letra = validDni(dni)
-    if(letra == dni[dni + 1: ]):
+    if(letra == dni[len(dni)-1: ]):
         comprob = True
     else:
         comprob = False
