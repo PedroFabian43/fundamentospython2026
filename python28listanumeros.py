@@ -48,27 +48,29 @@ listaPar.sort()
 listaNum.sort()
 
 print("----------------------------------")
-print("La suma total es:", suma)
+print("Resultados")
 print("Números introducidos:", contador)
 print("Números pares:", contadorpar)
 print("Números impares:", contadorimpar)
 print("La suma de los pares es:", sumapar)
 print("La suma de los impares es:", sumaimpar)
+print("La suma total es:", suma)
+
 
 print("----------------------------------")
 print("Lista de todos los numeros:")
-for i in range(len(listaNum)):
-    print(listaNum[i])
+for num in listaNum:
+    print(num)
     
 print("----------------------------------")
 print("Lista de todos los pares:")
-for i in range(len(listaPar)):
-    print(listaPar[i])
+for num in listaPar:
+    print(num)
 
 print("----------------------------------")
 print("Lista de todos los impares:")
-for i in range(len(listaImpar)):
-    print(listaImpar[i])
+for num in listaImpar:
+    print(num)
 
 print("----------------------------------")
 print("Fin de programa")
