@@ -8,3 +8,4 @@ class Mes:
     def getTempMed(self):
         media = (self.tempMax + self.tempMin) / 2
         return media
+    
