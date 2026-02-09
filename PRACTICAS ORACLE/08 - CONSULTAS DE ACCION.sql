@@ -173,3 +173,11 @@ INSERT INTO DOCTOR (HOSPITAL_COD, APELLIDO, ESPECIALIDAD, DOCTOR_NO) VALUES ((SE
 
 --Borrar todos los empleados dados de alta entre las fechas 01/01/80 y 31/12/82.
 SELECT * FROM EMP ORDER BY FECHA_ALT; 
+DELETE FROM EMP WHERE FECHA_ALT BETWEEN '01-01-1980' AND '31-12-1982';
+
+--Modificar el salario de los empleados trabajen en la paz y estén destinados a Psiquiatría.  Subirles el sueldo 20000 Ptas. más que al señor Amigo R.
+SELECT * FROM HOSPITAL;
+SELECT * FROM dept;
+SELECT * FROM emp;
+
+ROLLBACK;
