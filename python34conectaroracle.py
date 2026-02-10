@@ -33,19 +33,49 @@ cursor.execute(sql)
 #tenemos un método llamado FETCHONE() que s emueve una fila cada vez que lo ejecutamos
 #nos devuelve dicha fila en la que estamos posicionados
 
-row = cursor.fetchone()#Primera fila
-print(row)
-row = cursor.fetchone()#segunda fila
-print(row)
-row = cursor.fetchone()#Tercera fila
-print(row)
-row = cursor.fetchone()#Cuarta fila
-print(row)
-#Hasta aquí está la consulta completa de la tabla
-#que sucede si leemos una fila cuando no tenemos más?
-row = cursor.fetchone()#Quinta Fila
-print(row)
-#Da none oNull si fuera oracle
+#para hacer comentarios en bloque se usa command + K + C
+#Para descomentar en grupo command + k + u
+
+# row = cursor.fetchone()#Primera fila
+# print(row)
+# row = cursor.fetchone()#segunda fila
+# print(row)
+# row = cursor.fetchone()#Tercera fila
+# print(row)
+# row = cursor.fetchone()#Cuarta fila
+# print(row)
+#un cursor solo es forward only, no puede retroceder
+
+# #Hasta aquí está la consulta completa de la tabla
+# #que sucede si leemos una fila cuando no tenemos más?
+
+# row = cursor.fetchone()#Quinta Fila
+# print(row)
+#Da none o Null si fuera oracle
+
+#si queremos leer todos los registros del cursor podemos usar: 
+ #1) bucle while
+# row = cursor.fetchone()
+# while ( row != None):
+#     print("leer filas...")
+#     row = cursor.fetchone()
+
+#2) bucle for
+# for row in cursor:
+#     print(row)
+    
+#     #tambien podemos extraer los datos de una columna según su indice
+#     print(row[0]) #DEPT_NO
+#     print(row[1]) #DNOMBRE
+#     #en algunas bbdd nos permite extraer el dato de la fila por el nombre de la columna
+#     # nombre = row.DNOMBRE
+#     # print(nombre)
+#     #La BBDD de oracle no acepta esto
+
+#3) recorrer con variables el cursor
+#Nuestra consulta tiene 3 columnas (numero ,nombre y localidad)
+for numero, nombre, localidad in cursor:
+    print(nombre)
 
 #siempre que finalicemos las acciones, debemos liberar los recursos
 cursor.close()
