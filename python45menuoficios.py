@@ -1,9 +1,7 @@
 import oracledb
 connection = oracledb.connect(user = "SYSTEM", password = "oracle", dsn = "localhost/FREEPDB1")
-
 cursor = connection.cursor()
 listaOficios = []
-contador = 1
 
 #agregamos oficios mediante una consulta SQL
 sql = "SELECT DISTINCT OFICIO FROM EMP"
