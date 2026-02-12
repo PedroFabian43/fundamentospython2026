@@ -8,12 +8,11 @@ contador = 1
 sql = "SELECT DISTINCT FUNCION FROM PLANTILLA ORDER BY FUNCION"
 cursor.execute(sql)
 
-for puesto in cursor:
-    listaFuncion.append(puesto[0])
 
 print("----Lista de funciones----")
-for funcion in listaFuncion:
-    print(f"{contador}) {funcion}")
+for row in cursor:
+    print(f"{contador}) {row[0]}")
+    listaFuncion.append(row[0])
     contador = contador + 1
 
 contador = 1
